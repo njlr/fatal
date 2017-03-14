@@ -1,0 +1,38 @@
+cxx_binary(
+  name = '1.0-variables',
+  srcs = [
+    '1.0-variables.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:fatal',
+  ],
+)
+
+cxx_binary(
+  name = '1.1-values',
+  srcs = [
+    '1.1-values.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:fatal',
+  ],
+)
+
+cxx_binary(
+  name = '1.2-metafunctions',
+  srcs = [
+    '1.2-metafunctions.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:fatal',
+  ],
+)

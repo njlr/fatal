@@ -1,0 +1,26 @@
+prebuilt_cxx_library(
+  name = 'fatal',
+  header_only = True,
+  header_namespace = 'fatal',
+  exported_headers = subdir_glob([
+    ('fatal', '*.h'),
+    ('fatal', 'benchmark/*.h'),
+    ('fatal', 'codec/*.h'),
+    ('fatal', 'container/*.h'),
+    ('fatal', 'debug/*.h'),
+    ('fatal', 'functional/*.h'),
+    ('fatal', 'lesson/*.h'),
+    ('fatal', 'log/*.h'),
+    ('fatal', 'math/*.h'),
+    ('fatal', 'string/*.h'),
+    ('fatal', 'test/*.h'),
+    ('fatal', 'time/*.h'),
+    ('fatal', 'type/*.h'),
+    ('fatal', 'type/deprecated/*.h'),
+    ('fatal', 'type/impl/*.h'),
+    ('fatal', 'utility/*.h'),
+  ]),
+  visibility = [
+    'PUBLIC',
+  ],
+)

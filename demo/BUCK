@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'demo',
+  srcs = [
+    'ytse_jam.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++1z',
+  ],
+  deps = [
+    '//:fatal',
+  ],
+)

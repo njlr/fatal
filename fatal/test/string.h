@@ -15,6 +15,7 @@
 #include <type_traits>
 
 #include <cstring>
+#include <utility>
 
 namespace fatal {
 namespace detail {
@@ -27,7 +28,7 @@ struct parse_impl_conversion_pair<std::string, bool> {
   using quote = std::integral_constant<char, '\0'>;
 
   static std::string convert(bool value) { return value ? "true" : "false"; }
- 
+
   static void append(std::string &out, bool value) {
     out.append(value ? "true" : "false");
   }
@@ -40,7 +41,7 @@ struct parse_impl_conversion_pair<bool, std::string> {
     if (value == "true") {
       return true;
     }
-    
+
     if (value == "false") {
       return false;
     }

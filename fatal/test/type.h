@@ -13,6 +13,7 @@
 #include <string>
 #include <type_traits>
 #include <typeinfo>
+#include <cstdlib>
 
 #ifdef __GNUC__
 # include <cxxabi.h>
